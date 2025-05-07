@@ -10,6 +10,7 @@ df = df.dropna(subset=['date']).sort_values(by='date').reset_index(drop=True)
 
 # Inicializar app
 app = Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
+server = app.server
 app.title = "Dashboard de Ventas"
 
 # Layout
